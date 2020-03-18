@@ -1,6 +1,6 @@
+import 'semantic-ui-css/semantic.css'
 import Button from './button/button.vue'
 import Headline from './headline/Headline'
-
 export default {
   install (Vue) {
     console.log('install...')

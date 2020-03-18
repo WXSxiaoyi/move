@@ -1,21 +1,39 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <my-button></my-button>
+    <my-button size="big" icon="user">我是大按钮</my-button>
     <hr>
-    <my-headline></my-headline>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <my-button size="small">我是小按钮</my-button>
+    <hr>
+    <my-button size="large">我是特殊按钮</my-button>
+    <hr>
+    <my-button size="huge" disabled icon="bell slash outline">我是禁用按钮</my-button>
+    <hr>
+    <my-button size="tiny"  icon="sync" loading >我是加载按钮</my-button>
+    <hr>
+    <my-button animated="animated" size="small">
+      <div slot="hidden">$1000</div>
+      <div slot="visible">牛牛</div>
+    </my-button>
+    <hr>
+    <my-button animated="fade" size="small">
+      <div slot="hidden">$1000</div>
+      <div slot="visible">牛牛</div>
+    </my-button>
+    <hr>
+    <my-button size="big" @click="hClick">事件</my-button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /examples
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
+  methods: {
+    hClick () {
+      alert('别点我')
+    }
+  },
   components: {
-    HelloWorld
   }
 }
 </script>
