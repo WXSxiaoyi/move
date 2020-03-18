@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    MyButton
+    <h4>标题</h4>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'button.vue'
+  name: 'My-Headline'
 }
 </script>
 
